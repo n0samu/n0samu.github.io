@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Check Flash Player</title>
+
+    <!--CSS Code-->
+    <style media = "screen">
+        .flashbox {
+            width: 318px;
+            height: 182px;
+            border: thin solid red;
+            overflow: auto;
+            padding: 1em;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Check Flash Player</h1>
+    <div class="flashbox">
+        <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="https://fpdownload.macromedia.com/get/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" id="flashAbout_small" width="318" height="182">
+            <param name="movie" value="flashAbout_info_small.swf">             
+            <param name="quality" value="high">
+            <embed src="flashAbout_info_small.swf" quality="high" name="flashAbout_small" type="application/x-shockwave-flash" pluginspage="https://www.adobe.com/go/getflashplayer" width="318" height="182">
+        </object>
+    </div>
+    <p>
+        If you see a blank red box above, Flash Player is not installed or enabled. <br>
+        <a href="https://archive.org/details/flashplayerarchive">Install it from here.</a>
+    </p>
+    <p>
+        If you see a Flash Player information icon, your Flash Player is timebombed. <br>
+        <a href="https://github.com/darktohka/FlashPatch/releases/latest">Patch your Flash Player using this tool.</a>
+    </p>
+    <p>
+        If you see your Flash Player version, you're good to go!
+    </p>
+    <p>
+        Note that most modern browsers don't support Flash Player anymore. <br>
+        Compatible browsers for Windows include Internet Explorer, <a href="https://www.waterfox.net/download/">Waterfox</a>, <a href="http://kmeleonbrowser.org/download.php">K-Meleon</a>, <a href="https://www.palemoon.org/download.shtml">Pale Moon</a>, and <a href="https://basilisk-browser.org/download.shtml">Basilisk</a>. <br>
+        Waterfox is recommended for Linux or Mac users. Pale Moon and Basilisk also have Linux versions available.
+    </p>
+    
+</body>
+</html>

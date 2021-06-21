@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Strict URL Encode and Decode</title>
+</head>
+<body>
+
+    <script type="text/javascript">
+        function encode() {
+            thebox = document.getElementById("textbox");
+            thebox.value = encodeURI(thebox.value).replaceAll("%25", "%").replace(/[!'()*]/g, x => `%${x.charCodeAt(0).toString(16).toUpperCase()}`);
+        }
+        function decode() {
+            thebox = document.getElementById("textbox");
+            thebox.value = decodeURI(thebox.value);
+        }
+        function clearBox() {
+            thebox = document.getElementById("textbox");
+            thebox.value = "";
+        }
+    </script>
+
+    <h1>Strict URL Encode and Decode</h1>
+    <input type="text" class="out" id="textbox" value="" style="width:50%" />
+    <br><br>
+    <button onclick="encode();">Encode URL</button>
+    <button onclick="decode();">Decode URL</button>
+    <button onclick="clearBox();">Clear</button>
+    
+</body>
+</html>
