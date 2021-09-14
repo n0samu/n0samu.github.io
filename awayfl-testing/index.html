@@ -25,27 +25,27 @@
 <body>
 	<script>
 		const urlParams = new URLSearchParams(window.location.search);
-        var swfName = urlParams.get('swf');
-        if (!swfName) {
-        	swfName = 'default.swf';
-        }
+		var swfName = urlParams.get('swf');
+		if (!swfName) {
+			swfName = 'default.swf';
+		}
 		const config = {
-		    width: 550,
-    		height: 400,
-		    splash: 'awayfl/todo.jpg',
-		    progress: { // optional
-		        back: 'cover url(awayfl/progressBg.jpg)',
-		        line: 'awayfl/progressLine.jpg', // or image, it will passed to progressLine background,
-		        rect: [0, 0.9, 1, 0.1] // x, y, width, height of preogress line relative contianer 
-		    },
-		    baseUrl: 'awayfl',
-		    runtime: ['awayfl/runtime.js'],
-		    binary: [{
-		        path: swfName,
-		        resourceType: 'GAME',
-		        name: 'Game', // not used atm
-		        meta: {} // not used atm
-		    }],
+			width: 550,
+			height: 400,
+			splash: 'awayfl/todo.jpg',
+			progress: { // optional
+				back: 'cover url(awayfl/progressBg.jpg)',
+				line: 'awayfl/progressLine.jpg', // or image, it will passed to progressLine background,
+				rect: [0, 0.9, 1, 0.1] // x, y, width, height of preogress line relative contianer 
+			},
+			baseUrl: 'awayfl',
+			runtime: ['awayfl/runtime.js'],
+			binary: [{
+				path: swfName,
+				resourceType: 'GAME',
+				name: 'Game', // not used atm
+				meta: {} // not used atm
+			}],
 		}
 
 		window.addEventListener("load", () => {
