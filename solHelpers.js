@@ -39,14 +39,16 @@ function exportSOL() {
     const invalidDataMsg = 'Invalid data. Make sure to copy a LocalStorage value (without the key).';
     const invalidNameMsg = 'Please specify a filename.';
     const msgElem = document.getElementById('error');
+    const b64DataBox = document.getElementById('base64textbox');
+    const filenameBox = document.getElementById('filenametextbox');
 
-    let solData = document.getElementById('base64textbox').value;
+    let solData = b64DataBox.value;
     if (!isB64SOL(solData)) {
         msgElem.innerHTML = invalidDataMsg;
         return;
     }
 
-    let solName = document.getElementById('filenametextbox').value;
+    let solName = filenameBox.value;
     if (!solName) {
         msgElem.innerHTML = invalidNameMsg;
         return;
@@ -56,5 +58,7 @@ function exportSOL() {
     }
 
     msgElem.innerHTML = '';
+    b64DataBox.value = '';
+    filenameBox.value = '';
     saveFile(solData, 'application/octet-stream', solName);
 }
