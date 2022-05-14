@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="solHelpers.js"></script>
+  <title>Ruffle Saves Exporter Bookmarklet</title>
+</head>
+
+<body>
+  <h1>Ruffle Saves Export Bookmarklet</h1>
+  <p>There are a few ways to add this bookmarklet to your browser:</p>
+  <ul>
+    <li>Press Ctrl-Shift-B to open your browser's Bookmarks Toolbar, then drag the link below to the toolbar.</li>
+    <li>In Firefox, right-click the link and click &quot;Bookmark Link&quot;.</li>
+    <li>Right-click the link and copy it. Then create a new bookmark and paste the link into the URL field of the bookmark.</li>
+  </ul>
+
+  <b>
+    <a href="javascript:(function() {     function saveFile(bytesBase64, mimeType, fileName) {         let fileUrl = 'data:' + mimeType + ';base64,' + bytesBase64;         fetch(fileUrl)             .then(response => response.blob())             .then(blob => {                 let link = window.document.createElement('a');                 link.href = window.URL.createObjectURL(blob, { type: mimeType });                 link.download = fileName;                 document.body.appendChild(link);                 link.click();                 document.body.removeChild(link);             });     }     function isB64SOL(str) {         try {             let decodedData = atob(str);             return decodedData.slice(6, 10) === 'TCSO';         } catch(e) {             return false;         }     }     Object.keys(localStorage).forEach(function(key) {         let solName = key.split('/').pop();         let solData = localStorage.getItem(key);         if (isB64SOL(solData)) {             saveFile(solData, 'application/octet-stream', solName + '.sol');         }     }); })();">
+      Export Ruffle Saves
+    </a>
+  </b>
+
+  <p>To export your Ruffle save files from a website, just visit the website, then click the bookmarklet in your browser's Bookmarks menu or toolbar. All of the save files should automatically download as .sol files!</p>
+
+  <p>The Ruffle desktop program stores its save files at <code>%LocalAppData%\ruffle\SharedObjects</code>. On Windows, you can open this location by pasting it into the Run box (Windows + R).</p>
+  <p>Here is the easiest way I've found to import save files into the Ruffle desktop program:</p>
+  <ol>
+    <li>Download the SWF file for the game that your save file applies to.</li>
+    <li>Open the SWF file in Ruffle and play until the game saves your progress (It might happen after you beat the first level, for example).</li>
+    <li>Open Ruffle's save file folder (as explained previously).</li>
+    <li>Look through the subfolders until you find a file with the same name as the save file you exported.</li>
+    <li>Replace the save file with the one you exported. Next time you open the SWF file in Ruffle, your progress should be restored!</li>
+  </ol>
+
+  <h1>Manual Export Tool</h1>
+  <p>Some sites have security settings that prevent bookmarklets from working. The tool below provides a manual method of downloading Ruffle save data as a .sol file. To export your Ruffle save files from a website:</p>
+  <ol>
+    <li>Visit the website and press F12 or Ctrl-Shift-I to open your browser's Developer Tools.</li>
+    <li>Click the &quot;Application&quot; tab (in Chrome) or the &quot;Storage&quot; tab (in Firefox).</li>
+    <li>On the left sidebar, expand the &quot;Local Storage&quot; section and select the domain (such as https://example.com)</li>
+    <li>You will see a list of keys and values. Find the key corresponding to the save file you want to export and copy its corresponding value.</li>
+    <li>Paste the value into the box below, then enter a name for the save file into the next box.</li>
+    <li>Click the Export button!</li>
+  </ol>
+
+  <label for="base64textbox">Enter base64 value to export:</label><br>
+  <input type="text" id="base64textbox" style="width:50%" /><br>
+  <label for="filenametextbox">Enter a .sol filename to export:</label><br>
+  <input type="text" id="filenametextbox" style="width:20%" /><br>
+  <br>
+  <button onclick="exportSOL();">Export SOL File</button>
+  <span id="error" style="color: red"></span>
+  <br><br>
+</body>
+</html>
