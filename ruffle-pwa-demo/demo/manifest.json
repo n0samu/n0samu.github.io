@@ -1,9 +1,9 @@
 {
     "name": "Ruffle Web Demo",
     "short_name": "Ruffle",
-    "start_url": "/demo/",
-    "background_color": "#FFDCB5",
-    "theme_color": "#37528C",
+    "start_url": "/ruffle-pwa-demo/demo/",
+    "background_color": "#37528C",
+    "theme_color": "#FFAD33",
     "icons": [
         {
             "src": "../assets/favicon-512.png",
