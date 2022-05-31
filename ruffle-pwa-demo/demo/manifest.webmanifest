@@ -43,5 +43,5 @@
         }
     ],
     "display": "standalone",
-    "orientation":"landscape"
+    "orientation":"any"
 }
