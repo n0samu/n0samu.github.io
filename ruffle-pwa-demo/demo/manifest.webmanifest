@@ -42,6 +42,5 @@
             "purpose": "maskable"
         }
     ],
-    "display": "standalone",
-    "orientation":"any"
+    "display": "standalone"
 }
