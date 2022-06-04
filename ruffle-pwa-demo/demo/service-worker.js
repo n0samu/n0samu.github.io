@@ -3,7 +3,7 @@ const CACHE_NAME  = 'RuffleDemo';
 
 /* Add relative URL of all the static content you want to store in
  * cache storage (this will help us use our app offline)*/
-let resourcesToCache = ["./", "./index.js", "./966.index.js", "../assets/logo.svg", "./logo-anim.swf"];
+let resourcesToCache = ["./", "./index.js", "./966.index.js", "662.index.js", "../assets/logo.svg", "./logo-anim.swf", "b9d3b49658f9e64136ee.wasm"];
 
 self.addEventListener("install", e=>{
     e.waitUntil(
