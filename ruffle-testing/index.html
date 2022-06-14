@@ -13,7 +13,8 @@
       }
       function fillGame() {
         const urlParams = new URLSearchParams(window.location.search);
-        const data = urlParams.get('swf');
+        const defaultSWF = 'ruffled.swf';
+        const data = urlParams.get('swf') || defaultSWF;
         const game = document.createElement('object');
         game.setAttribute('data', data);
         game.setAttribute('type', 'application/x-shockwave-flash');
