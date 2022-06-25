@@ -1,0 +1,1 @@
+(function(){var s = document.createElement('script'); s.setAttribute('src', 'https://unpkg.com/@ruffle-rs/ruffle'); (document.head || document.documentElement).append(s);})()
