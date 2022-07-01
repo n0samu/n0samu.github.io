@@ -4,6 +4,7 @@
 // @version     1.0
 // @author      nosamu
 // @description Play Flash content on the current page with Ruffle!
+// @match       <all_urls>
 // @run-at document-start
 // @inject-into content
 // ==/UserScript==
