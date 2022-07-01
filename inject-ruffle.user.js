@@ -1,5 +1,6 @@
 // ==UserScript==
 // @name        Ruffle
+// @namespace   n0samu.github.io
 // @version     1.0
 // @author      nosamu
 // @description Play Flash content on the current page with Ruffle!
