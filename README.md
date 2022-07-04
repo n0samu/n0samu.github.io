@@ -15,7 +15,7 @@ An example showing how to set up the [AwayFL](https://awayfl.org/) Flash emulato
 ### [AVM2.js Testing](https://n0samu.github.io/avm2js-testing/?swf=hitbox.swf)
 An example showing how to set up the AVM2.js Flash emulator on your website.
 
-### [AVM2.js Testing](https://n0samu.github.io/waflash-testing/?swf=chuckthesheep.swf)
+### [WAFlash Testing](https://n0samu.github.io/waflash-testing/?swf=chuckthesheep.swf)
 An example showing how to set up the WAFlash emulator for local testing. Please [contact the author](https://vidkidz.tistory.com/) for permission to use WAFlash on your website.
 
 ## Web Tools
