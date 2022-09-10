@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Check Flash Player</title>
+    <script>
+        window.RufflePlayer = window.RufflePlayer || {};
+        window.RufflePlayer.config = {"warnOnUnsupportedContent": false};
+    </script>
+    <script src="ruffle/ruffle.js"></script>
+
+    <!--CSS Code-->
+    <style>
+        .flashbox {
+            width: 318px;
+            height: 182px;
+            border: thin solid red;
+            padding: 1em;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Check Flash Player</h1>
+    <div class="flashbox">
+        <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="https://fpdownload.macromedia.com/get/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" id="flashAbout_small" width="318" height="182">
+            <param name="movie" value="flashAbout_info_small.swf">             
+            <param name="quality" value="high">
+            <embed src="flashAbout_info_small.swf" quality="high" name="flashAbout_small" type="application/x-shockwave-flash" pluginspage="https://www.adobe.com/go/getflashplayer" width="318" height="182">
+        </object>
+    </div>
+    <p>
+        If you see a blank red box above, Ruffle is not working in your browser, and Flash Player is not installed or enabled.
+    </p>
+    
+</body>
+</html>
