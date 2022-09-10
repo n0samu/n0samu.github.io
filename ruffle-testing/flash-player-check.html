@@ -5,7 +5,11 @@
     <title>Check Flash Player</title>
     <script>
         window.RufflePlayer = window.RufflePlayer || {};
-        window.RufflePlayer.config = {"warnOnUnsupportedContent": false};
+        window.RufflePlayer.config = {
+            "warnOnUnsupportedContent": false, 
+            "autoplay": "on", 
+            "unmuteOverlay": "hidden"
+        };
     </script>
     <script src="ruffle/ruffle.js"></script>
 
