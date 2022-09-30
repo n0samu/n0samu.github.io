@@ -26,7 +26,7 @@ Test whether your Flash plugin (or Flash emulator extension) is working and disp
 ### [Ruffle Saves Exporter](https://n0samu.github.io/ruffleSavesExport)
 A bookmarklet that exports the save data of web builds of Ruffle in .SOL format, suitable for use with the Ruffle desktop player or Adobe Flash Player.
 
-### [Ruffle Userscript](n0samu.github.io/inject-ruffle.user.js)
+### [Ruffle Userscript](https://n0samu.github.io/inject-ruffle.user.js)
 A userscript that loads and plays Flash content on the current page with Ruffle, without a dedicated browser extension. Works best with [ViolentMonkey](https://violentmonkey.github.io/). Also works in desktop and mobile Safari with the [Userscripts app](https://github.com/quoid/userscripts#userscripts-safari).
 
 ### [Strict URL Encode and Decode](https://n0samu.github.io/strictEncodeURL)
