@@ -10,8 +10,14 @@ Developed by jmtb02 and Jimp
 ### [Click the Frog](https://n0samu.github.io/waflash-testing/?swf=clickthefrog.swf)
 Developed by Vitaliy Onishenko
 
+### [Full Moon](https://n0samu.github.io/ruffle-testing/?swf=fullmoon.swf)
+Developed by Bart Bonte
+
 ### [HitBox](https://n0samu.github.io/avm2js-testing/?swf=hitbox.swf)
 Developed by GameShot.org
+
+### [Little Wheel](https://n0samu.github.io/ruffle-testing/?swf=littlewheel.swf)
+Developed by OneClickDog
 
 ### [Morphing](https://n0samu.github.io/waflash-testing/?swf=morphing.swf)
 Developed by Plus and Eric's Games
@@ -25,6 +31,9 @@ Developed by Flipline Studios
 ### [Prizma Puzzle Challenges](https://n0samu.github.io/ruffle-testing/?swf=prizmapuzzlechallenges.swf)
 Developed by SilenGames
 
+### [Silversphere](https://n0samu.github.io/ruffle-testing/?swf=silversphere.swf)
+Developed by Damien Clarke
+
 ### [Steppin' Stones](https://n0samu.github.io/avm2js-testing/?swf=steppinstones.swf)
 Developed by Emiel de Graaf
 
@@ -33,3 +42,6 @@ Developed by Nananas
 
 ### [Vector TD](https://n0samu.github.io/waflash-testing/?swf=vectortd.swf%3Fswlist%3Dstinger_big_blue.swf) , [Vector TDx](https://n0samu.github.io/waflash-testing/?swf=vectortdx.swf%3Fswlist%3Dstinger_big_blue.swf) , [Vector TD 2](https://n0samu.github.io/waflash-testing/?swf=vectortd2.swf%3Fswlist%3Dstinger_big_blue.swf)
 Developed by David Scott and The WDDG
+
+### [Wonderputt](https://n0samu.github.io/ruffle-testing/?swf=wonderputt.swf)
+Developed by Damp Gnat

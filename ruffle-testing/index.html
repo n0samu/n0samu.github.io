@@ -3,6 +3,14 @@
   <meta charset="UTF-8">
   <head>
     <title>Ruffle Dynamic Player</title>
+    <script>
+      window.RufflePlayer = window.RufflePlayer || {};
+      window.RufflePlayer.config = {
+        "warnOnUnsupportedContent": false,
+        "letterbox": "on",
+        "showSwfDownload": true
+      };
+    </script>
     <script src="ruffle/ruffle.js"> </script>
     <script>
       function createParam(name, value) {
