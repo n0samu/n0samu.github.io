@@ -22,6 +22,9 @@ Developed by OneClickDog
 ### [Morphing](https://n0samu.github.io/waflash-testing/?swf=morphing.swf)
 Developed by Plus and Eric's Games
 
+### [Ninja Painter](https://n0samu.github.io/waflash-testing/?swf=ninjapainter.swf) , [Ninja Painter 2](https://n0samu.github.io/waflash-testing/?swf=ninjapainter2.swf)
+Developed by SilenGames
+
 ### [Not to Scale](https://n0samu.github.io/avm2js-testing/?swf=nottoscale.swf)
 Developed by Stephen Xu
 

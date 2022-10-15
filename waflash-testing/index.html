@@ -8,10 +8,11 @@
 		var urlParams = new URLSearchParams(window.location.search);
 		var swfName = urlParams.get("swf");
 		if (!swfName) {swfName = "default.swf";}
-		var swfURLObj = new URL(swfName, window.location.href);
-		console.log(swfURLObj.toString());
-		var gameConfig = {
-			swfUrl: swfURLObj.toString()		
+		var swfURLObj = new URL(swfName, document.baseURI);
+		swfURL = swfURLObj.toString();
+		console.log(swfURL);
+		window.wafOptions = {
+			enableFilters: true
 		}
 </script>
 </head>
@@ -73,7 +74,7 @@
 		import {
 			createWaflash
 		} from './waflash/waflash-player.min.js';
-		createWaflash(gameConfig.swfUrl, window.wafOptions || {});
+		createWaflash(swfURL, window.wafOptions || {});
 	</script>
 </div>
 </body>
