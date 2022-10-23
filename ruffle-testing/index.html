@@ -14,10 +14,12 @@
         "letterbox": "on",
         "showSwfDownload": true
       };
+      const defaultSWF = 'ruffled.swf';
+      const urlParams = new URLSearchParams(window.location.search);
+      const swfName = urlParams.get('swf') || defaultSWF;
+      urlParams.delete('swf'); // Not part of Ruffle config object
       window.RufflePlayer = window.RufflePlayer || {};
       window.RufflePlayer.config = defaultConfig;
-      const urlParams = new URLSearchParams(window.location.search);
-      urlParams.delete('swf'); // Not part of Ruffle config object
       for (opt of urlParams.keys()) {
         let val = urlParams.get(opt);
         try {
@@ -35,9 +37,6 @@
         return param;
       }
       function fillGame() {
-        const urlParams = new URLSearchParams(window.location.search);
-        const defaultSWF = 'ruffled.swf';
-        const swfName = urlParams.get('swf') || defaultSWF;
         const game = document.createElement('object');
         game.setAttribute('data', swfName);
         game.setAttribute('type', 'application/x-shockwave-flash');
