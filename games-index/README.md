@@ -13,6 +13,9 @@ Developed by Vitaliy Onishenko
 ### [Full Moon](https://n0samu.github.io/ruffle-testing/?swf=fullmoon.swf)
 Developed by Bart Bonte
 
+### [Gravity Duck](https://n0samu.github.io/ruffle-testing/?swf=gravityduck.swf) , [Gravity Duck 2](https://n0samu.github.io/ruffle-testing/?swf=gravityduck2.swf)
+Developed by Woblyware
+
 ### [HitBox](https://n0samu.github.io/avm2js-testing/?swf=hitbox.swf)
 Developed by GameShot.org
 
