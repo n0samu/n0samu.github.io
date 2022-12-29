@@ -30,12 +30,6 @@
     </script>
     <script src="ruffle-wgpu-blend/ruffle.js"> </script>
     <script>
-      function createParam(name, value) {
-        const param = document.createElement('param');
-        param.setAttribute('name', name);
-        param.setAttribute('value', value);
-        return param;
-      }
       function fillGame() {
         const ruffle = window.RufflePlayer.newest();
         const player = ruffle.createPlayer();
