@@ -9,64 +9,37 @@
         "autoplay": "on",
         "backgroundColor": "#31497D",
         "letterbox": "off",
-        "unmuteOverlay": "hidden"
+        "unmuteOverlay": "hidden",
+        "logLevel": "info"
       }
     },
     {
-      "location": "swfs/bitey1.swf",
-      "title": "Bitey of Brackenwood",
-      "author": "Adam Phillips",
-      "authorLink": "https://bitey.com",
-      "type": "Animation"
+      "location": "../ruffle-testing/FPAWorld2.swf",
+      "title": "The Fancy Pants Adventures: World 2",
+      "author": "Brad Borne",
+      "authorLink": "https://www.bornegames.com/",
+      "type": "Game"
     },
     {
-      "location": "swfs/saturday_morning_watchmen.swf",
-      "title": "Saturday Morning Watchmen",
-      "author": "Harry Partridge",
-      "authorLink": "https://twitter.com/HappyHarryToons",
-      "type": "Animation"
-    },
-    {
-      "location": "swfs/synj1.swf",
-      "title": "Synj vs. Horrid Part 1",
-      "author": "Dan Paladin",
-      "authorLink": "https://www.thebehemoth.com",
-      "type": "Animation"
-    },
-    {
-      "location": "swfs/synj2.swf",
-      "title": "Synj vs. Horrid Part 2",
-      "author": "Dan Paladin",
-      "authorLink": "https://www.thebehemoth.com",
-      "type": "Animation"
+      "location": "../ruffle-testing/bejeweled2.swf",
+      "title": "Bejeweled 2",
+      "author": "PopCap Games",
+      "authorLink": "https://en.wikipedia.org/wiki/PopCap_Games",
+      "type": "Game"
     },
 
     {
-      "location": "swfs/alien_hominid.swf",
+      "location": "../ruffle-testing/alienhominid.swf",
       "title": "Alien Hominid",
       "author": "Tom Fulp and Dan Paladin",
       "authorLink": "https://www.newgrounds.com",
       "type": "Game"
     },
     {
-      "location": "swfs/flyguy.swf",
-      "title": "FlyGuy",
-      "author": "Trevor van Meter",
-      "authorLink": "https://www.heytvm.com",
-      "type": "Game"
-    },
-    {
-      "location": "swfs/marvin_spectrum.swf",
-      "title": "Marvin Spectrum",
-      "author": "Bryan Singh",
-      "authorLink": "https://www.hotbryan.com",
-      "type": "Game"
-    },
-    {
-      "location": "swfs/wasted_sky.swf",
-      "title": "Wasted Sky",
-      "author": "Tom Fulp",
-      "authorLink": "https://www.newgrounds.com",
+      "location": "../ruffle-testing/catburglar.swf",
+      "title": "Cat Burglar & The Magic Museum",
+      "author": "Lindsay LaPlante",
+      "authorLink": "https://twitter.com/starblinky",
       "type": "Game"
     }
   ]
