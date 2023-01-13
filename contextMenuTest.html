@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>Touch Event Test</title>
+	<style type="text/css">
+		#top-half {
+			background-color: black;
+			height: 400px;
+		}
+		#bottom-half {
+			font-size: 48px;
+		}
+	</style>
+</head>
+<body>
+	<div id="top-half"></div>
+	<div id="bottom-half"></div>
+
+	<script type="text/javascript">
+		const topHalf = document.getElementById("top-half");
+		const bottomHalf = document.getElementById("bottom-half");
+		topHalf.addEventListener("contextmenu", e => {
+			console.log("button: ", e.button);
+			console.log("buttons: ", e.buttons);
+			bottomHalf.innerHTML = "button: " + e.button;
+		})
+	</script>
+</body>
