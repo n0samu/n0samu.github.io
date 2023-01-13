@@ -22,7 +22,7 @@
 		topHalf.addEventListener("contextmenu", e => {
 			console.log("button: ", e.button);
 			console.log("buttons: ", e.buttons);
-			bottomHalf.innerHTML = "button: " + e.button;
+			bottomHalf.innerHTML = "button: " + e.button + ", Input source: " + e.mozInputSource;
 		})
 	</script>
 </body>
