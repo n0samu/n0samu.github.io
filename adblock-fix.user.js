@@ -3,24 +3,31 @@
 // @namespace   n0samu.github.io
 // @include     https://www.play-games.com/game/*
 // @include     https://www.jogos360.com.br/*
+// @include     https://www.flashgamesplayer.com/free/*
 // @grant       none
-// @version     1.0
+// @version     1.2
 // @author      nosamu
-// @description Fix games on Play-Games.com and jogos360.com.br not starting with adblock enabled.
+// @description Fix Play button not working on various game sites with adblock enabled.
 // @run-at document-idle
 // ==/UserScript==
 
-let elName, fnName;
-switch (document.domain) {
-	case 'www.play-games.com':
-		elName = 'loadthegame';
-		fnName = 'loadGame';
-		break;
-	case 'www.jogos360.com.br':
-		elName = 'preload-start-ad';
-		fnName = 'cleanUp';
-		break;
+function addButtonAction(elName, fnName) {
+	let btn = document.getElementById(elName);
+	btn.setAttribute('onclick', (btn.getAttribute('onclick') || '') + fnName + '();');
 }
 
-let el = document.getElementById(elName);
-el.setAttribute('onclick', (el.getAttribute('onclick') || '') + fnName + '();');
+switch (document.domain) {
+	case 'www.play-games.com':
+		addButtonAction('loadthegame', 'loadGame');
+		break;
+	case 'www.jogos360.com.br':
+		addButtonAction('preload-start-ad', 'cleanUp');
+		break;
+	case 'www.flashgamesplayer.com':
+		setTimeout(function() {
+			let btn = document.getElementById('player');
+			btn.classList.remove('ab');
+			btn.textContent = 'Play Now!';
+		}, 600);
+		break;
+}
