@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Find Message URL of Discord Attachment</title>
+</head>
+<body>
+
+    <script type="text/javascript">
+        function strictParseInt(num) {
+            try {
+                const result = JSON.parse(num);
+                return Number.isInteger(result) ? result : NaN;
+            } catch {
+                return NaN;
+            }
+        }
+
+        function getMessageUrl(attachmentUrl, serverId) {
+            const attachPrefix = "https://cdn.discordapp.com/attachments/";
+            const messagePrefix = "https://discord.com/channels/";
+            if (!attachmentUrl.startsWith(attachPrefix)) {
+                throw new Error("Invalid attachment URL");
+            }
+            if (!strictParseInt(serverId)) {
+                throw new Error("Invalid server ID");
+            }
+            attachmentUrl = new URL(attachmentUrl);
+            let [channelId, messageId] = 
+                attachmentUrl.pathname.split("/").slice(2, 4);
+            let messagePath = [serverId, channelId, messageId].join("/");
+            return messagePrefix + messagePath;
+        }
+
+        function generate() {
+            let attachmentUrl = document.getElementById("url-input").value;
+            let serverId = document.getElementById("id-input").value;
+            let linkElem = document.getElementById("message-link");
+            let errorElem = document.getElementById("error");
+            let messageUrl = "";
+            try {
+                messageUrl = getMessageUrl(attachmentUrl, serverId);
+                errorElem.innerText = "";
+            } catch(e) {
+                errorElem.innerText = e.message;
+            }
+            linkElem.href = messageUrl;
+            linkElem.innerText = messageUrl;
+        }
+    </script>
+
+    <h1>Find Message URL of Discord Attachment</h1>
+    <p>
+        This tool generates the message URL associated with the given 
+        Discord attachment URL and server ID.
+    </p>
+    <div id="box1">
+        <label for="url-input">Attachment URL:</label><br>
+        <input type="text" id="url-input" value="" style="width:60em" />
+    </div>
+    <br>
+    <div id="box2">
+        <label for="id-input">Server ID:</label><br>
+        <input type="text" id="id-input" value="" style="width:10em" />
+    </div>
+    <br>
+    <button onclick="generate();">Generate Message URL</button>
+    <br><br>
+    <div id="link-area">
+        <a id="message-link" href=""></a>
+        <div id="error" style="color: red"></div>
+    </div>
+    
+</body>
+</html>
