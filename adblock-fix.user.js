@@ -20,9 +20,6 @@ switch (document.domain) {
 	case 'www.play-games.com':
 		addButtonAction('loadthegame', 'loadGame');
 		break;
-	case 'www.jogos360.com.br':
-		addButtonAction('preload-start-ad', 'cleanUp');
-		break;
 	case 'www.flashgamesplayer.com':
 		setTimeout(function() {
 			let btn = document.getElementById('player');
