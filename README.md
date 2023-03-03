@@ -6,7 +6,7 @@ Useful web tools and demos, mostly related to Flash emulation.
 ### [Ruffle PWA Demo](https://n0samu.github.io/ruffle-pwa-demo/demo/)
 The [Ruffle Web Demo](https://ruffle.rs/demo/), converted into a Progressive Web App. Installable on desktop and mobile devices, and runs offline!
 
-### [Ruffle Testing](https://n0samu.github.io/ruffle-testing/?swf=prizmapuzzlechallenges.swf)
+### [Ruffle Testing](https://n0samu.github.io/ruffle-testing/?swf=littlewheel.swf)
 An example showing how to set up the [Ruffle](https://ruffle.rs/) Flash emulator on your website.
 
 ### [AwayFL Testing](https://n0samu.github.io/awayfl-testing/?swf=papasburgeria_v2.swf)
@@ -15,7 +15,7 @@ An example showing how to set up the [AwayFL](https://awayfl.org/) Flash emulato
 ### [AVM2.js Testing](https://n0samu.github.io/avm2js-testing/?swf=hitbox.swf)
 An example showing how to set up the AVM2.js Flash emulator on your website.
 
-### [WAFlash Testing](https://n0samu.github.io/waflash-testing/?swf=chuckthesheep.swf)
+### [WAFlash Testing](https://n0samu.github.io/waflash-testing/?swf=prizmapuzzlechallenges.swf)
 An example showing how to set up the WAFlash emulator for local testing. Please [contact the author](https://vidkidz.tistory.com/) for permission to use WAFlash on your website.
 
 ## Web Tools

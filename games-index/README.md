@@ -4,11 +4,20 @@ This is a list of the games that I've made playable here with various Flash Play
 ### [Accurate Slapshot](https://n0samu.github.io/waflash-testing/?swf=accurateslapshot.swf)
 Developed by Ivan Pavlov
 
+### [Bejeweled 2](https://n0samu.github.io/ruffle-testing/?swf=bejeweled2.swf)
+Developed by PopCap Games
+
+### [Cat Burglar & The Magic Museum](https://n0samu.github.io/ruffle-testing/?swf=catburglar.swf)
+Developed by Lindsay LaPlante
+
 ### [Chuck the Sheep](https://n0samu.github.io/waflash-testing/?swf=chuckthesheep.swf)
 Developed by jmtb02 and Jimp
 
 ### [Click the Frog](https://n0samu.github.io/waflash-testing/?swf=clickthefrog.swf)
 Developed by Vitaliy Onishenko
+
+### [The Fancy Pants Adventures: World 2](https://n0samu.github.io/ruffle-testing/?swf=FPAWorld2.swf)
+Developed by Brad Borne
 
 ### [Full Moon](https://n0samu.github.io/ruffle-testing/?swf=fullmoon.swf)
 Developed by Bart Bonte
@@ -18,6 +27,9 @@ Developed by Woblyware
 
 ### [HitBox](https://n0samu.github.io/avm2js-testing/?swf=hitbox.swf)
 Developed by GameShot.org
+
+### [Home Sheep Home](https://n0samu.github.io/ruffle-testing/?swf=homesheephome.swf&forceScale=1)
+Developed by Aardman Animations
 
 ### [Little Wheel](https://n0samu.github.io/ruffle-testing/?swf=littlewheel.swf)
 Developed by OneClickDog
@@ -34,7 +46,7 @@ Developed by Stephen Xu
 ### [Papa's Burgeria](https://n0samu.github.io/awayfl-testing/?swf=papasburgeria_v2.swf)
 Developed by Flipline Studios
 
-### [Prizma Puzzle Challenges](https://n0samu.github.io/ruffle-testing/?swf=prizmapuzzlechallenges.swf)
+### [Prizma Puzzle Challenges](https://n0samu.github.io/waflash-testing/?swf=prizmapuzzlechallenges.swf)
 Developed by SilenGames
 
 ### [Silversphere](https://n0samu.github.io/ruffle-testing/?swf=silversphere.swf)
@@ -46,8 +58,11 @@ Developed by Emiel de Graaf
 ### [The Painter](https://n0samu.github.io/waflash-testing/?swf=thepainter.swf)
 Developed by Nananas
 
-### [Vector TD](https://n0samu.github.io/waflash-testing/?swf=vectortd.swf%3Fswlist%3Dstinger_big_blue.swf) , [Vector TDx](https://n0samu.github.io/waflash-testing/?swf=vectortdx.swf%3Fswlist%3Dstinger_big_blue.swf) , [Vector TD 2](https://n0samu.github.io/waflash-testing/?swf=vectortd2.swf%3Fswlist%3Dstinger_big_blue.swf)
+### [Vector TD](https://n0samu.github.io/ruffle-testing/?swf=vectortd.swf%3Fswlist%3Dstinger_big_blue.swf) , [Vector TDx](https://n0samu.github.io/ruffle-testing/?swf=vectortdx.swf%3Fswlist%3Dstinger_big_blue.swf) , [Vector TD 2](https://n0samu.github.io/ruffle-testing/?swf=vectortd2.swf%3Fswlist%3Dstinger_big_blue.swf)
 Developed by David Scott and The WDDG
 
 ### [Wonderputt](https://n0samu.github.io/ruffle-testing/?swf=wonderputt.swf)
 Developed by Damp Gnat
+
+### [Wonder Rocket](https://n0samu.github.io/ruffle-testing/?swf=wonderrocket.swf)
+Developed by JJWallace Design
