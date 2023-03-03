@@ -31,3 +31,6 @@ A userscript that loads and plays Flash content on the current page with Ruffle,
 
 ### [Strict URL Encode and Decode](https://n0samu.github.io/strictEncodeURL)
 A tool for [percent-encoding](https://en.wikipedia.org/wiki/Percent-encoding) and decoding URLs and URL components. When encoding, it leaves any already-encoded parts of the string intact rather than double-encoding them. It's one easy box that "just works", unlike any of the similar tools that I've found online.
+
+### [Discord Message Link Generator](https://n0samu.github.io/discordAttachmentMessage.html)
+A simple tool to quickly find the message URL associated with a given Discord attachment URL. Also requires the ID of the server the attachment was uploaded to.
