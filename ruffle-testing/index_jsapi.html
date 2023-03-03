@@ -3,56 +3,6 @@
   <meta charset="UTF-8">
   <head>
     <title>Ruffle Dynamic Player</title>
-    <script>
-      const configMap = {
-        "autoplay": {true: "on", false: "off"},
-        "unmuteOverlay": {true: "visible", false: "hidden"},
-        "letterbox": {true: "on", false: "off"}
-      };
-      const defaultConfig = {
-        "warnOnUnsupportedContent": false,
-        "letterbox": "on",
-        "showSwfDownload": true
-      };
-      const defaultSWF = 'ruffled.swf';
-      const urlParams = new URLSearchParams(window.location.search);
-      const swfName = urlParams.get('swf') || defaultSWF;
-      urlParams.delete('swf'); // Not part of Ruffle config object
-      window.RufflePlayer = window.RufflePlayer || {};
-      window.RufflePlayer.config = defaultConfig;
-      for (opt of urlParams.keys()) {
-        let val = urlParams.get(opt);
-        try {
-          val = configMap[opt][Boolean(JSON.parse(val))];
-        } catch {}
-        window.RufflePlayer.config[opt] = val;
-      }
-    </script>
-    <script src="ruffle/ruffle.js"> </script>
-    <script>
-      function fillGame() {
-        const ruffle = window.RufflePlayer.newest();
-        const player = ruffle.createPlayer();
-        const container = document.getElementById('container');
-        container.appendChild(player);
-        player.load({
-          url: swfName,
-          allowScriptAccess: true
-        }).then(() => {
-          console.info("Ruffle successfully loaded the file");
-        }).catch((e) => {
-          console.error(`Ruffle failed to load the file: ${e}`);
-        });
-        player.addEventListener('loadedmetadata', () => {
-          console.info(player.metadata);
-        })
-      }
-      if (document.readyState != 'loading') {
-        fillGame();
-      } else {
-        document.addEventListener("DOMContentLoaded", fillGame)
-      }
-    </script>
     <style>
       * {
         margin: 0;
@@ -63,6 +13,9 @@
         overflow: hidden;
       }
     </style>
+    <script src="configure-ruffle.js"> </script>
+    <script src="ruffle/ruffle.js"> </script>
+    <script src="run-ruffle-jsapi.js"> </script>
   </head>
   <body>
     <div id="container"></div>

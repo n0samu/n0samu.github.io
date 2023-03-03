@@ -28,7 +28,7 @@ Developed by Woblyware
 ### [HitBox](https://n0samu.github.io/avm2js-testing/?swf=hitbox.swf)
 Developed by GameShot.org
 
-### [Home Sheep Home](https://n0samu.github.io/ruffle-testing/?swf=homesheephome.swf&forceScale=1)
+### [Home Sheep Home](https://n0samu.github.io/ruffle-testing/?swf=homesheephome.swf)
 Developed by Aardman Animations
 
 ### [Little Wheel](https://n0samu.github.io/ruffle-testing/?swf=littlewheel.swf)
