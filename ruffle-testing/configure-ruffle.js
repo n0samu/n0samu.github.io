@@ -18,8 +18,7 @@ window.RufflePlayer.config = defaultConfig;
 for (opt of urlParams.keys()) {
 	let val = urlParams.get(opt);
 	try {
-		val = Boolean(JSON.parse(val));
-		val = configMap[opt][val];
+		val = configMap[opt][Boolean(JSON.parse(val))];
 	} catch {}
 	window.RufflePlayer.config[opt] = val;
 }
