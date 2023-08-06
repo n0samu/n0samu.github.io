@@ -1,7 +1,7 @@
 # Flash Games Index
 This is a list of the games that I've made playable here with various Flash Player emulators. The games are provided for demonstration purposes only - all credit belongs to the original developers.
 
-### [Accurate Slapshot](https://n0samu.github.io/waflash-testing/?swf=accurateslapshot.swf)
+### [Accurate Slapshot](https://n0samu.github.io/ruffle-testing/?swf=accurateslapshot.swf)
 Developed by Ivan Pavlov
 
 ### [Bejeweled 2](https://n0samu.github.io/ruffle-testing/?swf=bejeweled2.swf)
@@ -13,7 +13,7 @@ Developed by Lindsay LaPlante
 ### [Chuck the Sheep](https://n0samu.github.io/waflash-testing/?swf=chuckthesheep.swf)
 Developed by jmtb02 and Jimp
 
-### [Click the Frog](https://n0samu.github.io/waflash-testing/?swf=clickthefrog.swf)
+### [Click the Frog](https://n0samu.github.io/ruffle-testing/?swf=clickthefrog.swf)
 Developed by Vitaliy Onishenko
 
 ### [The Fancy Pants Adventures: World 2](https://n0samu.github.io/ruffle-testing/?swf=FPAWorld2.swf)
@@ -37,7 +37,7 @@ Developed by OneClickDog
 ### [Morphing](https://n0samu.github.io/waflash-testing/?swf=morphing.swf)
 Developed by Plus and Eric's Games
 
-### [Ninja Painter](https://n0samu.github.io/waflash-testing/?swf=ninjapainter.swf) , [Ninja Painter 2](https://n0samu.github.io/waflash-testing/?swf=ninjapainter2.swf)
+### [Ninja Painter](https://n0samu.github.io/ruffle-testing/?swf=ninjapainter.swf) , [Ninja Painter 2](https://n0samu.github.io/ruffle-testing/?swf=ninjapainter2.swf)
 Developed by SilenGames
 
 ### [Not to Scale](https://n0samu.github.io/avm2js-testing/?swf=nottoscale.swf)
@@ -46,7 +46,7 @@ Developed by Stephen Xu
 ### [Papa's Burgeria](https://n0samu.github.io/awayfl-testing/?swf=papasburgeria_v2.swf)
 Developed by Flipline Studios
 
-### [Prizma Puzzle Challenges](https://n0samu.github.io/waflash-testing/?swf=prizmapuzzlechallenges.swf)
+### [Prizma Puzzle Challenges](https://n0samu.github.io/ruffle-testing/?swf=prizmapuzzlechallenges.swf)
 Developed by SilenGames
 
 ### [Silversphere](https://n0samu.github.io/ruffle-testing/?swf=silversphere.swf)
@@ -54,6 +54,12 @@ Developed by Damien Clarke
 
 ### [Steppin' Stones](https://n0samu.github.io/avm2js-testing/?swf=steppinstones.swf)
 Developed by Emiel de Graaf
+
+### [Sugar, Sugar 3](https://n0samu.github.io/waflash-testing/?swf=sugarsugar3.swf)
+Developed by Bart Bonte
+
+### [Talesworth Adventure: The Lost Artifacts](https://n0samu.github.io/waflash-testing/?swf=talesworth-adventure-ep2.swf)
+Developed by Talesworth Game Studio
 
 ### [The Painter](https://n0samu.github.io/waflash-testing/?swf=thepainter.swf)
 Developed by Nananas
@@ -66,3 +72,6 @@ Developed by Damp Gnat
 
 ### [Wonder Rocket](https://n0samu.github.io/ruffle-testing/?swf=wonderrocket.swf)
 Developed by JJWallace Design
+
+### [You are Still a Box](https://n0samu.github.io/waflash-testing/?swf=you-are-still-a-box.swf)
+Developed by Games Northwest
