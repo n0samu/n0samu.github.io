@@ -4,10 +4,10 @@ const configMap = {
 	"letterbox": {true: "on", false: "off"}
 };
 const defaultConfig = {
-	"warnOnUnsupportedContent": false,
 	"letterbox": "on",
 	"showSwfDownload": true,
-	"forceScale": true
+	"forceScale": true,
+	"forceAlign": true,
 };
 const defaultSWF = 'logo-anim.swf';
 const urlParams = new URLSearchParams(window.location.search);
