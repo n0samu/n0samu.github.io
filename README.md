@@ -23,6 +23,8 @@ An example showing how to set up the WAFlash emulator for local testing. Please 
 ### [Flash Player Check](https://n0samu.github.io/flash-player-check)
 Test whether your Flash plugin (or Flash emulator extension) is working and displaying Flash content.
 
+### [LSO Editor](https://n0samu.github.io/lso-editor/)
+A web build of [CUB3D](https://github.com/CUB3D)'s [rust-flash-lso](https://github.com/ruffle-rs/rust-flash-lso) project. It allows you to view and edit Flash Local Shared Object (LSO) data files (.sol).
 ### [Ruffle Saves Exporter](https://n0samu.github.io/ruffleSavesExport)
 A bookmarklet that exports the save data of web builds of Ruffle in .SOL format, suitable for use with the Ruffle desktop player or Adobe Flash Player.
 
