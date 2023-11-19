@@ -8,6 +8,18 @@
 
     <h1>File Input Test</h1>
     <input type="file" accept=".*" id="local-file" />
+    <div id="type"></div>
+
+    <script type="text/javascript">
+        const fileInput = document.getElementById("local-file");
+        const txtDiv = document.getElementById("type");
+        fileInput.addEventListener('change', (e) => {
+            if (fileInput.files.length > 0) {
+                const file = fileInput.files[0];
+                txtDiv.textContent = file.type;
+            }
+        });
+    </script>
     
 </body>
 </html>
