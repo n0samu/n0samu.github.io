@@ -2,7 +2,6 @@
 // @name        Adblock Fix for Game Sites
 // @namespace   n0samu.github.io
 // @include     https://www.play-games.com/game/*
-// @include     https://www.jogos360.com.br/*
 // @include     https://www.flashgamesplayer.com/free/*
 // @grant       none
 // @version     1.2
@@ -21,10 +20,6 @@ switch (document.domain) {
 		addButtonAction('loadthegame', 'loadGame');
 		break;
 	case 'www.flashgamesplayer.com':
-		setTimeout(function() {
-			let btn = document.getElementById('player');
-			btn.classList.remove('ab');
-			btn.textContent = 'Play Now!';
-		}, 600);
+		document.getElementById('player')?.click();
 		break;
 }
